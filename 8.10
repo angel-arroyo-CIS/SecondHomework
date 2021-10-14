@@ -1,0 +1,21 @@
+# Angel Arroyo, October 13th, 2021
+# 1780023
+
+Phrase = input()
+
+OriginalPhraseForward = ""
+OriginalPhraseBackwards = ""
+
+for i in range(len(Phrase)):
+
+   if Phrase[i].isalpha():
+
+       OriginalPhraseForward += Phrase[i].lower()
+
+       OriginalPhraseBackwards = Phrase[i].lower() + OriginalPhraseBackwards
+
+
+if OriginalPhraseForward == OriginalPhraseBackwards:
+    print(Phrase + " is a palindrome")
+else:
+    print(Phrase + " is not a palindrome")
