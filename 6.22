@@ -1,0 +1,39 @@
+# Angel Arroyo
+# October 13th, 2021
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+d = int(input())
+e = int(input())
+f = int(input())
+
+# Finds common denominator
+a1 = (e * a)
+b1 = (e * b)
+c1 = (e * c)
+
+d1 = ((b*-1)*d)
+e1 = ((b*-1)*e)
+f1 = ((b*-1)*f)
+
+# Solves for x by itself
+x = (a1 + d1)
+x_left = x/x
+
+x_ans = (c1 + f1)/x
+
+
+# Solves for Y by plugging in x
+x_number = (a*x_ans)
+number_left = (c - x_number) / b
+b2 = b/b
+y = number_left
+
+# Checks to see if in range
+if (-10 > x_ans or x_ans > 10) or (-10 > y or y > 10):
+    print("No solution")
+
+else:
+    print(int(x_ans), int(y))
