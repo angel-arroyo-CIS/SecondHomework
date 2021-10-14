@@ -1,0 +1,16 @@
+# Angel Arroyo, October 13th, 2021
+# 1780023
+
+import csv
+input1 = input()
+
+with open(input1, 'r') as InputFile:
+    WordsReader = csv.reader(InputFile)
+    for Row in WordsReader:
+        WordsList = Row
+
+NoDuplicates = list(dict.fromkeys(WordsList))
+ListOfWords = len(NoDuplicates)
+
+for i in range(ListOfWords):
+    print(NoDuplicates[i], WordsList.count(NoDuplicates[i]))
