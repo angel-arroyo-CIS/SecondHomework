@@ -1,0 +1,27 @@
+# Angel Arroyo, October 13th, 2021
+# 1780023
+
+SimplePassword = input()
+
+NewPassword = ''
+
+for character in SimplePassword:
+
+    if character == 'i':
+        SimplePassword = SimplePassword.replace('i', '!')
+
+    elif character == 'a':
+        SimplePassword = SimplePassword.replace('a', '@')
+
+    elif character == 'm':
+        SimplePassword = SimplePassword.replace('m', 'M')
+
+    elif character == 'B':
+        SimplePassword = SimplePassword.replace('B', '8')
+
+    elif character == 'o':
+        SimplePassword = SimplePassword.replace('o', '.')
+
+NewPassword = (SimplePassword + 'q*s')
+
+print(NewPassword)
